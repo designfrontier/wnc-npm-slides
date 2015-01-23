@@ -21,8 +21,8 @@ var data = {
 		mainColor: '#BAA797',
 		specialTransition: 'zoom'
 	},
-	title: 'Wnc npm slides',
-	subtitle: 'A presentation on NPM workflow',
+	title: 'WNC npm slides',
+	subtitle: 'A pres on npm workflow',
 	greetingText: 'This is greeting text!',
 	goodbyeText: 'This is goodbye text!',
 	sections: [
@@ -36,15 +36,11 @@ var data = {
 				},
 				{
 					title: 'This is the 2nd slide',
-					uniqueContent: '
-						<p>This is a paragraph.</p>
-					'
+					uniqueContent: '<p>This is a paragraph.</p>'
 				},
 				{
 					title: 'This is the 3rd slide',
-					uniqueContent: '
-						This is a <strong>strong</strong> element.
-					'
+					uniqueContent: 'This is a <strong>strong</strong> element.'
 				},
 				{
 					title: 'This is the 4th slide',

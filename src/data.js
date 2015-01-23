@@ -21,8 +21,8 @@ var data = {
 		mainColor: '#BAA797',
 		specialTransition: 'zoom'
 	},
-	title: 'Wnc npm slides',
-	subtitle: 'A presentation on NPM workflow',
+	title: 'WNC npm slides',
+	subtitle: 'A pres on npm workflow',
 	greetingText: 'This is greeting text!',
 	goodbyeText: 'This is goodbye text!',
 	sections: [

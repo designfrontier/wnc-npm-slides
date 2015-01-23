@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 		revealjs: {
 			expand: true,
 			cwd: 'src/bower_components/revealjs/css/',
-			src: 'reveal.min.css',
+			src: '*.css',
 			dest: 'dist/bower_components_dist/'
 		},
 		highlightjs: {
