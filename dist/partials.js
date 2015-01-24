@@ -50,7 +50,7 @@ function program3(depth0,data) {
   return buffer;
   }
 
-  buffer += "\n<section class=\"section-title\" data-background=\"#BAA797\" data-transition=\"zoom\">\n	<h1>";
+  buffer += "\n<section class=\"section-title\" data-transition=\"zoom\">\n	<h1>";
   if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.title); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
@@ -80,9 +80,7 @@ function program1(depth0,data) {
   return buffer;
   }
 
-  buffer += "\n<section class=\"section-title\" data-background=\""
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.theme)),stack1 == null || stack1 === false ? stack1 : stack1.mainColor)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\" data-transition=\""
+  buffer += "\n<section class=\"section-title\" data-transition=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.theme)),stack1 == null || stack1 === false ? stack1 : stack1.specialTransition)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\">\n	<h2>";
   if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }

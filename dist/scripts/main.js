@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		controls: false,
 
 		// Display a presentation progress bar
-		progress: true,
+		progress: false,
 
 		// Display the page number of the current slide
 		slideNumber: false,
