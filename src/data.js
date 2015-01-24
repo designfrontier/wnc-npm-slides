@@ -4,26 +4,24 @@
 
 'use strict';
 
-// Grab user's github data via the GitHub API
-var githubData = getData('https://api.github.com/users/designfrontier');
-
 // Global context for Handlebars templates in `src/templates`
 var data = {
-	githubData: githubData,
-
-
-
 	// ------------------------------------------
 	// CUSTOMIZE BELOW
 	// ------------------------------------------
-
+	social: {
+		twitter: 'daniel_sellers',
+		github: 'designfrontier',
+		profile: 'http://photos-h.ak.instagram.com/hphotos-ak-xpf1/t51.2885-15/10755899_365394280313935_633423439_n.jpg',
+		name: 'Daniel Sellers'
+	},
 	theme: {
-		mainColor: '#BAA797',
+		mainColor: '#231C27',
 		specialTransition: 'zoom'
 	},
-	title: 'WNC npm slides',
-	subtitle: 'A pres on npm workflow',
-	greetingText: 'This is greeting text!',
+	title: 'Modularize All the Things!',
+	subtitle: 'Getting to know the npm workflow',
+	greetingText: '',
 	goodbyeText: 'This is goodbye text!',
 	sections: [
 		{

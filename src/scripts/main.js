@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	Reveal.initialize({
 
 		// Display controls in the bottom right corner
-		controls: true,
+		controls: false,
 
 		// Display a presentation progress bar
 		progress: false,
 
 		// Display the page number of the current slide
-		slideNumber: true,
+		slideNumber: false,
 
 		// Push each slide change to the browser history
 		history: true,
