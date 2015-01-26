@@ -22,44 +22,119 @@ var data = {
 	title: 'Modularize All the Things!',
 	subtitle: 'Getting to know the npm workflow',
 	greetingText: '',
-	goodbyeText: 'This is goodbye text!',
+	goodbyeText: 'Go build awesome stuff!',
 	sections: [
 		{
-			title: 'This is the 1st section',
-			subtitle: 'This is a subtitle',
+			title: 'What are Modules?',
+			subtitle: 'a brief refresher',
 			slides: [
 				{
-					title: 'This is the 1st slide',
-					uniqueContent: 'this is a slide'
+					title: 'this is not a module.'
+					, background: {
+						image: 'swissArmy_1.jpg'
+					}
+					, image: {
+						attribution: 'Swiss Army Knife by Basheer Tome | CC BY 2.0'
+					}
+					, classes: 'invert--header'
 				},
 				{
-					title: 'This is the 2nd slide',
-					uniqueContent: '<p>This is a paragraph.</p>'
+					title: 'But that doesn\t look so bad...'
 				},
 				{
-					title: 'This is the 3rd slide',
-					uniqueContent: 'This is a <strong>strong</strong> element.'
+					title: 'yeah...'
+					, background: {
+						image: 'swissArmy_2.jpg'
+					}
+					, image: {
+						attribution: 'Swiss Army Knife by Dave Taylor | CC BY 2.0'
+					}
+					, classes: 'invert--header'
 				},
 				{
-					title: 'This is the 4th slide',
-					uniqueContent: 'This is slide 4!!!'
+					title: 'this...'
+					, background: {
+						image: 'swissArmy_3.jpg'
+					}
+					, image: {
+						attribution: 'The ultimate Swiss Army Knife for sale in Interlaken by redjar | CC BY 2.0'
+					}
+					, classes: 'invert--header'
 				},
 				{
-					title: 'This is the 5th slide',
-					uniqueContent: '<iframe class="stretch" src="//www.youtube.com/embed/XQu8TTBmGhA" frameborder="0" allowfullscreen></iframe>'
+					uniqueContent: '...is where you inevitably end up.'
 				},
 				{
-					title: 'This is the 6th slide',
-					uniqueContent: '\
-						<blockquote>\
-							"This is a quoteblock." - Some cool dude.\
-						</blockquote>'
+					title: ' '
+					, background: {
+						image: 'tools.jpg'
+					}
+					, image: {
+						attribution: 'photo by Todd Quackenbush'
+						, class: 'image__attribution--invert'
+					}
+				},
+				{
+					title: 'this is what we want'
+					, background: {
+						image: 'tools.jpg'
+					}
+					, classes: 'invert--header'
+					, image: {
+						attribution: 'photo by Todd Quackenbush'
+						, class: 'image__attribution--invert'
+					}
 				}
 			]
 		},
 		{
-			title: 'This is the 2nd section',
-			subtitle: 'This is a subtitle',
+			title: 'Use All The Modules',
+			subtitle: 'composing modules for fun and profit',
+			slides: [
+				{
+					title: 'This is the 1st slide',
+					uniqueContent: '<p>You can add more sections and slides inside of <span class="code">src/data.js</span>.</p>'
+				}
+			]
+		},
+		{
+			title: 'Creating Independent Modules',
+			subtitle: 'git that stuff outta here',
+			slides: [
+				{
+					title: 'How do I know this is the right time?'
+				},
+				{
+					background: {
+						image: 'sprint.gif'
+					}
+				},
+				{
+					title: 'There are general rules, but it is partly a feel thing'
+				},
+				{
+					uniqueContent: '\
+						<blockquote  class="quote--block" cite="http://www.haskellcast.com/episode/002-don-stewart-on-real-world-haskell/">\
+							"The general rule that we have is if you use something twice, move it out of any application specific code..."\
+							<footer class="attribution">Don Stewart (Real World Haskell)</footer>\
+						</blockquote>',
+					classes: 'quote'
+				},
+				{
+					uniqueContent: '\
+						<blockquote  class="quote--block" cite="http://www.haskellcast.com/episode/002-don-stewart-on-real-world-haskell/">\
+							"The general rule is: if you use something twice, move it out of any application specific context"\
+						</blockquote>',
+					classes: 'quote'
+				},
+				{
+					title: 'So Let\'s Pull out a Module'
+				}
+			]
+		},
+		{
+			title: 'The npm Workflow',
+			subtitle: 'git that stuff outta here',
 			slides: [
 				{
 					title: 'This is the 1st slide',

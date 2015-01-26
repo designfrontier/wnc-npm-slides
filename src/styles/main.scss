@@ -25,9 +25,10 @@ $linkColor: $mainColor; // this also includes the progress bar at the bottom
 $linkColorHover: lighten($linkColor, 15%);
 $selectionBackgroundColor: $mainColor;
 $backgroundColor: #F3F3F3; // this is the default, but can be overridden in the index.html "context" object
-$lightContrast: #e9e9e9;
+$lightContrast: #753637;
 
 $color--twitter: rgb(0,200,200);
+$color--blockQuote: lighten($lightContrast, 3%);
 
 // Fonts
 @import url(http://fonts.googleapis.com/css?family=Roboto:900,400);
@@ -63,6 +64,14 @@ $marginBase: 1rem;
 
 	h1, h2, h3, h4, h5, h6 {
 		text-align: left;
+	}
+
+	h2 {
+		font-size: 4.5rem;
+	}
+
+	h3 {
+		font-size: 4rem;
 	}
 
 	// h3 contrast
@@ -121,7 +130,7 @@ $marginBase: 1rem;
 
 	blockquote {
 		padding: $paddingBase;
-		background: $lightContrast;
+		background: $color--blockQuote;
 		border-radius: $borderRadiusBase;
 	}
 
@@ -148,12 +157,60 @@ $marginBase: 1rem;
 			color: #fff;
 		}
 	}
-}
 
-.social-links {
-	font-size: 1rem;
+	/*gross hack*/
+	& .invert--header {
+		& h2{
+			color: $sectionHeadingColor;
+			background: rgba(0, 0, 0, 0.5);
+			padding: .35em 0 .15em;
+			text-align: center;
+		}
+	}
 
-	&__twitter:hover, &__twitter:active, &__twitter {
-		color: $color--twitter;
+	& .social-links {
+		font-size: 1rem;
+
+		&__twitter:hover, &__twitter:active, &__twitter {
+			color: $color--twitter;
+		}
+	}
+
+	& .quote {
+		text-align: left;
+		color: $sectionHeadingColor;
+		background: $lightContrast;
+
+		&--block {
+			font-style: normal;
+			background: $color--blockQuote;
+		}
+
+		& .attribution {
+			font-size: 2rem;
+			padding-top: 2rem;
+			font-style: italic;
+			text-align: right;
+		}
+	}
+
+	& .image{
+
+		&__attribution {
+			position: fixed;
+			bottom: -15rem;
+			right: 1rem;
+			text-align: right;
+			font-size: .75rem;
+		}
+
+		&__attribution--invert {
+			position: fixed;
+			bottom: -15rem;
+			right: 1rem;
+			text-align: right;
+			font-size: .75rem;
+			color:$sectionHeadingColor;
+		}
 	}
 }
