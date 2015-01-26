@@ -40,7 +40,7 @@ var data = {
 					, classes: 'invert--header'
 				},
 				{
-					title: 'But that doesn\t look so bad...'
+					title: 'But that doesn\'t look so bad...'
 				},
 				{
 					title: 'yeah...'
@@ -94,7 +94,7 @@ var data = {
 			slides: [
 				{
 					title: 'What\'s out there?',
-					uniqueContent: '<p>120,900+ Pacakges are on npm.</p><p><code>underscore.js</code> had over 3.7 million downloads last month.'
+					uniqueContent: '<p>120,900+ Packages are on npm.</p><p><code>underscore.js</code> had over 3.7 million downloads last month.'
 				}
 				, {
 					title: 'How do I use them?'
