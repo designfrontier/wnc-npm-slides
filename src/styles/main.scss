@@ -135,6 +135,9 @@ $marginBase: 1rem;
 	}
 
 	// Section title slides
+	& .slides {
+		text-align: left;
+	}
 	.section-title {
 		background: $mainColor;
 
@@ -212,5 +215,9 @@ $marginBase: 1rem;
 			font-size: .75rem;
 			color:$sectionHeadingColor;
 		}
+	}
+
+	& .code__list {
+		list-style: none;
 	}
 }

@@ -92,8 +92,34 @@ var data = {
 			subtitle: 'composing modules for fun and profit',
 			slides: [
 				{
-					title: 'This is the 1st slide',
-					uniqueContent: '<p>You can add more sections and slides inside of <span class="code">src/data.js</span>.</p>'
+					title: 'What\'s out there?',
+					uniqueContent: '<p>120,900+ Pacakges are on npm.</p><p><code>underscore.js</code> had over 3.7 million downloads last month.'
+				}
+				, {
+					title: 'How do I use them?'
+				}
+				, {
+					title: 'first you find them'
+					, background: {
+						image: 'haystack.jpg'
+					}
+					, classes: 'invert--header'
+					, image: {
+						attribution: 'Hay stacks and Automobiles by Bill & Vicki T | CC BY 2.0'
+						, class: 'image__attribution--invert'
+					}
+				}
+				, {
+					title: 'Then it\'s easy'
+					, uniqueContent: '<code>npm install --save module-name-here</code>'
+				}
+				, {
+					title: 'If it\'s a dev tool'
+					, uniqueContent: '<code>npm install --save-dev module-name-here</code>'
+				}
+				, {
+					title: 'In practice'
+					, uniqueContent: '<pre><code>\n\nvar _ = require(\'underscore\')\n   , stooges = [\n        {name: \'moe\', age: 40}\n      , {name: \'larry\', age: 50}\n      , {name: \'curly\', age: 60}\n   ];\n\n\n_.max(stooges, function (stooge) { return stooge.age });\n\n</code></pre>'
 				}
 			]
 		},
@@ -129,6 +155,7 @@ var data = {
 				},
 				{
 					title: 'So Let\'s Pull out a Module'
+					, uniqueContent: 'but first let\'s talk about...'
 				}
 			]
 		},
@@ -137,8 +164,35 @@ var data = {
 			subtitle: 'git that stuff outta here',
 			slides: [
 				{
-					title: 'This is the 1st slide',
-					uniqueContent: '<p>You can add more sections and slides inside of <span class="code">src/data.js</span>.</p>'
+					title: 'Give it a home and a name',
+					uniqueContent: '<p>Create a new git repo and folder structure for your module. Don\'t forget your package.json (<code>npm init</code> will lay down a base for you).</p>'
+				}
+				, {
+					title: '<code>npm link</code>',
+					uniqueContent: '<p>THE tool for linking local packages for development</p>'
+				}
+				, {
+					title: '<code>npm link packageName</code>',
+					uniqueContent: '<p>set up the link to your new local module</p>'
+				}
+				, {
+					title: '<code>npm install -g .</code>',
+					uniqueContent: '<p>Test that it packages correctly</p>'
+				}
+				, {
+					title: '<code>npm version {major|minor|patch}</code>',
+					uniqueContent: '<p>Let npm handle your versioning and tagging automagically</p>'
+				}
+				, {
+					title: '<code>npm publish</code>',
+					uniqueContent: '<p>release it to the world!</p>'
+				}
+				, {
+					title: 'So...',
+					uniqueContent: '<ol class="code__list"><li><code>npm link</code></li><li><code>npm link packageName</code></li><li><code>npm install -g .</code></li><li><code>npm version</code></li><li><code>npm publish</code></li></ol>'
+				}
+				, {
+					title: 'Example Time...'
 				}
 			]
 		}
