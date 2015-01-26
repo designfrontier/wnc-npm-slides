@@ -159,6 +159,10 @@ $marginBase: 1rem;
 		strong {
 			color: #fff;
 		}
+
+		&--alternate {
+			background: $lightContrast;
+		}
 	}
 
 	/*gross hack*/

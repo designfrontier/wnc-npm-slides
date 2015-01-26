@@ -22,6 +22,7 @@ var data = {
 	title: 'Modularize All the Things!',
 	subtitle: 'Getting to know the npm workflow',
 	greetingText: '',
+	goodbyeHeader: 'Thanks!',
 	goodbyeText: 'Go build awesome stuff!',
 	sections: [
 		{
