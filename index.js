@@ -2,10 +2,10 @@ var express = require('express')
 	, app = express()
 	, server
 
-	, translate = require('./translate');
+	, lang = require('./lang');
 
 app.get('/', function (req, res) {
-	res.send(translate.translate('Hello', req.query.lang) + '. ' + translate.translate('Welcome to class', req.query.lang) + '.');
+	res.send(lang.translate('Hello', req.query.lang) + '. ' + lang.translate('Welcome to class', req.query.lang) + '.');
 });
 
 server = app.listen(1337, function () {
