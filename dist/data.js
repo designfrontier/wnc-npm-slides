@@ -95,6 +95,9 @@ var data = {
 				{
 					title: 'What\'s out there?',
 					uniqueContent: '<p>120,900+ Packages are on npm.</p><p><code>underscore.js</code> had over 3.7 million downloads last month.'
+				},
+				{
+					uniqueContent: 'A package is made up of all the resources required to create a single piece of functionality.'
 				}
 				, {
 					title: 'How do I use them?'
@@ -119,7 +122,7 @@ var data = {
 					, uniqueContent: '<code>npm install --save-dev module-name-here</code>'
 				}
 				, {
-					title: 'In practice'
+					title: 'In your code'
 					, uniqueContent: '<pre><code>\n\nvar _ = require(\'underscore\')\n   , stooges = [\n        {name: \'moe\', age: 40}\n      , {name: \'larry\', age: 50}\n      , {name: \'curly\', age: 60}\n   ];\n\n\n_.max(stooges, function (stooge) { return stooge.age });\n\n</code></pre>'
 				}
 			]
@@ -194,6 +197,36 @@ var data = {
 				}
 				, {
 					title: 'Example Time...'
+				}
+			]
+		},
+		{
+			title: 'Authoring considerations',
+			subtitle: 'how we writez da codez',
+			slides: [
+				{
+					uniqueContent: '<pre><code>\nvar _ = require(\'underscore\');\n\n</code></pre>'
+				},
+				{
+					title: 'require creates singletons'
+					, background: {
+						image: 'fingerprint.jpg'
+					}
+					, classes: 'invert--header'
+					, image: {
+						attribution: 'CSI spoon by Vince Alongi | CC BY 2.0'
+						, class: 'image__attribution'
+					}
+				},
+				{
+					uniqueContent: '<pre><code>\nvar _ = require(\'underscore\');\n\n</code></pre>'
+				},
+				{
+					title: 'If you need something unique...',
+					uniqueContent: 'you need to write your module to return new instances (e.g. a factory)'
+				}, 
+				{
+					uniqueContent: '<pre><code>\n//A compliment factory\nmodule.exports = function (presentParticiples) {\n\n   return function (name) {\n        "My " + name\n        + "you\'re so good at "\n        + (getRandomItem(presentParticiples)) + "!"\n    }\n}\n\n</code></pre>'
 				}
 			]
 		}
