@@ -9,9 +9,9 @@ var express = require('express')
 				, du: 'Guten tag'
 				, ja: '今日は'
 			}
-			, 'welcome to class': {
-				es: 'bienvenidos a la clase'
-				, du: 'willkommen in der Klasse'
+			, 'Welcome to class': {
+				es: 'Bienvenidos a la clase'
+				, du: 'Willkommen in der Klasse'
 				, ja: 'クラスへの歓迎'
 			}
 		}
@@ -20,7 +20,7 @@ var express = require('express')
 	};
 
 app.get('/', function (req, res) {
-	res.send(getTranslation('Hello', req.query.lang) + ', ' + getTranslation('welcome to class', req.query.lang));
+	res.send(getTranslation('Hello', req.query.lang) + '. ' + getTranslation('Welcome to class', req.query.lang) + '.');
 });
 
 server = app.listen(1337, function () {
