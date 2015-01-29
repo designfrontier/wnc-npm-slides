@@ -2,25 +2,10 @@ var express = require('express')
 	, app = express()
 	, server
 
-	, getTranslation = function (string, language) {
-		var translationDictionary = {
-			'Hello': {
-				es: 'Hola'
-				, du: 'Guten tag'
-				, ja: '今日は'
-			}
-			, 'Welcome to class': {
-				es: 'Bienvenidos a la clase'
-				, du: 'Willkommen in der Klasse'
-				, ja: 'クラスへの歓迎'
-			}
-		}
-
-		return translationDictionary[string][language] || string;
-	};
+	, translate = require('./translate');
 
 app.get('/', function (req, res) {
-	res.send(getTranslation('Hello', req.query.lang) + '. ' + getTranslation('Welcome to class', req.query.lang) + '.');
+	res.send(translate.translate('Hello', req.query.lang) + '. ' + translate.translate('Welcome to class', req.query.lang) + '.');
 });
 
 server = app.listen(1337, function () {
