@@ -204,7 +204,7 @@ function program1(depth0,data) {
   if (helper = helpers.subtitle) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.subtitle); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</h3>\n</section>\n\n\n<section>\n	<img class=\"constrain-width\" src=\""
+    + "</h3>\n</section>\n\n\n<section>\n	<img class=\"constrain-width profile\" src=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.profile)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\" alt=\""
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
@@ -212,17 +212,25 @@ function program1(depth0,data) {
   if (helper = helpers.greetingText) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.greetingText); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</h2>\n	<p>"
-    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.githubData)),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</p>\n	<p class=\"social-links\"><a class=\"social-links__twitter\" href=\"http://twitter.com/"
+    + "</h2>\n	<article class=\"profile__bio\">\n		<p class=\"bio__header\">Hi, I'm "
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</p>\n		<p class=\"social-links\">\n			<ul class=\"social-links__list\">\n				<li>tw: <a class=\"social-links__twitter\" href=\"http://twitter.com/"
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.twitter)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\">@"
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.twitter)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</a><a href=\"http://github.com/"
+    + "</a></li>\n				<li>git: <a href=\"http://github.com/"
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.github)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\">@"
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.github)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</a>\n</section>\n\n\n<section>\n	<h2>Presentation Overview</h2>\n	<ul>\n		";
+    + "</a></li>\n				<li>www: <a href=\"http:"
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.website)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\">"
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.website)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</a></li>\n				<li>email: <a href=\"mailto:"
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.email)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\">"
+    + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.social)),stack1 == null || stack1 === false ? stack1 : stack1.email)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "</a></li>\n			</ul>\n		</p>\n		<p class=\"bio\">husband. cyclist. coder. founder of hacknightslc. creator of <a href=\"http://action.ansble.com\">action!</a> and <a href=\"http://monument.ansble.com\">monument</a>. friend to javascripts. css liaison.</p>\n	</article>\n</section>\n\n\n<section>\n	<h2>Presentation Overview</h2>\n	<ul>\n		";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.sections), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n	</ul>\n</section>\n";

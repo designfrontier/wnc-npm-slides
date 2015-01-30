@@ -13,7 +13,9 @@ var data = {
 		twitter: 'daniel_sellers',
 		github: 'designfrontier',
 		profile: 'http://photos-h.ak.instagram.com/hphotos-ak-xpf1/t51.2885-15/10755899_365394280313935_633423439_n.jpg',
-		name: 'Daniel Sellers'
+		name: 'Daniel Sellers',
+		website: 'designfrontier.net',
+		email: 'd.sellers@ldschurch.org'
 	},
 	theme: {
 		mainColor: '#231C27',

@@ -221,7 +221,32 @@ $marginBase: 1rem;
 		}
 	}
 
+	& .profile__bio {
+		display: block;
+	}
+
 	& .code__list {
 		list-style: none;
+	}
+
+	& .profile {
+		float:left;
+		display: block;
+		padding-right: 1em;
+	}
+
+	& .social-links__list {
+		list-style: none;
+		font-size: .65em;
+	}
+
+	& .bio {
+		font-size: .5em;
+
+		&__header {
+			margin: 0;
+			padding: 0;
+			line-height: .35em;
+		}
 	}
 }

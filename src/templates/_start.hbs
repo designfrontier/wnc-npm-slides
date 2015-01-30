@@ -6,10 +6,20 @@
 
 {{!-- About the author --}}
 <section>
-	<img class="constrain-width" src="{{ social.profile }}" alt="{{ social.name }}'s avatar'" />
+	<img class="constrain-width profile" src="{{ social.profile }}" alt="{{ social.name }}'s avatar'" />
 	<h2>{{ greetingText }}</h2>
-	<p>{{ githubData.name }}</p>
-	<p class="social-links"><a class="social-links__twitter" href="http://twitter.com/{{ social.twitter }}">@{{ social.twitter }}</a><a href="http://github.com/{{ social.github }}">@{{ social.github }}</a>
+	<article class="profile__bio">
+		<p class="bio__header">Hi, I'm {{ social.name }}</p>
+		<p class="social-links">
+			<ul class="social-links__list">
+				<li>tw: <a class="social-links__twitter" href="http://twitter.com/{{ social.twitter }}">@{{ social.twitter }}</a></li>
+				<li>git: <a href="http://github.com/{{ social.github }}">@{{ social.github }}</a></li>
+				<li>www: <a href="http:{{ social.website }}">{{ social.website }}</a></li>
+				<li>email: <a href="mailto:{{ social.email }}">{{ social.email }}</a></li>
+			</ul>
+		</p>
+		<p class="bio">husband. cyclist. coder. founder of hacknightslc. creator of <a href="http://action.ansble.com">action!</a> and <a href="http://monument.ansble.com">monument</a>. friend to javascripts. css liaison.</p>
+	</article>
 </section>
 
 {{!-- Presentation outline --}}
