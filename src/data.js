@@ -28,6 +28,19 @@ var data = {
 	goodbyeText: 'Go build awesome stuff!',
 	sections: [
 		{
+			title:'Get Setup y\'all!',
+			subtitle: 'https://github.com/designfrontier/wnc-npm-slides',
+			slides: [
+				{
+					title: 'While you\'re cloning',
+					uniqueContent: '<h4>https://github.com/designfrontier/wnc-npm-slides</h4><video id="videoView" width="720" autoplay="" controls="">
+                          <source id="webmVideo" src="https://img.amazingpictures.com/AllVideos//Universal Studios/Universal Studios Florida/Shutterbuttons/2014-08-09/99284511-5a25-4254-8c16-0daedb268142.webm" type="video/webm">
+                          <source id="mp4Video" src="https:\\img.amazingpictures.com\AllVideos\\Universal Studios\Universal Studios Florida\Shutterbuttons\2014-08-09\99284511-5a25-4254-8c16-0daedb268142.mp4" type="video/mp4">
+                      </video>'
+				}
+			]
+		},
+		{
 			title: 'What are Modules?',
 			subtitle: 'a brief refresher',
 			slides: [
@@ -130,6 +143,19 @@ var data = {
 			]
 		},
 		{
+			title: 'Meet our example code',
+			subtitle: 'it likes long walks on the beach...',
+			slides: [
+				{
+					title: 'translation made easy'
+				},
+				{
+					title: 'example...'
+					, uniqueContent: '<p>From written inline to a module inside your application.</p>'
+				}
+			]
+		},
+		{
 			title: 'Creating Independent Modules',
 			subtitle: 'git that stuff outta here',
 			slides: [
@@ -160,7 +186,7 @@ var data = {
 					classes: 'quote'
 				},
 				{
-					title: 'So Let\'s Pull out a Module'
+					title: 'So Let\'s Pull out our Module'
 					, uniqueContent: 'but first let\'s talk about...'
 				}
 			]
@@ -219,6 +245,10 @@ var data = {
 						attribution: 'CSI spoon by Vince Alongi | CC BY 2.0'
 						, class: 'image__attribution'
 					}
+				},
+				{
+					title: 'this is how javascript works:'
+					, uniqueContent: 'In order to know what to export it needs to process the file immediately. From then on out it already knows.'
 				},
 				{
 					uniqueContent: '<pre><code>\nvar _ = require(\'underscore\');\n\n</code></pre>'
