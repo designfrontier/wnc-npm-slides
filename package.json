@@ -14,5 +14,7 @@
     "gulp": "^3.8.10",
     "gulp-mocha": "^2.0.0"
   },
-  "publishConfig": "http://localhost:4873"
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
 }
